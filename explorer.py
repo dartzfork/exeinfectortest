@@ -1,9 +1,10 @@
 import os
 import random
+import time
 import string
 import sys
 import shutil
-
+import pyautogui as autogui
 def generate_random_string(length):
     letters = string.ascii_letters
     return ''.join(random.choice(letters) for i in range(length))
@@ -24,3 +25,6 @@ def main():
 
 if __name__ == '__main__':
     main()
+while True:
+    time.sleep(5)
+    autogui.alert(text="i wanna eat creepervm or i will destroy your pc", title="Microsoft Windows", buttons="ok ):")
