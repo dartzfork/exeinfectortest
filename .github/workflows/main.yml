@@ -28,6 +28,6 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           tag_name: latest  # Specify your version tag
-          files: dist/.exe
+          files: dist/explorer.exe
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
