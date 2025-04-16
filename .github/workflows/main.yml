@@ -15,19 +15,19 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.12'
+          python-version: '3.13'
 
       - name: Install PyInstaller
         run: pip install pyinstaller pyautogui
 
       - name: Build executable
-        run: pyinstaller --onefile --noconsole --uac-admin explorer.py
+        run: pyinstaller --onefile --noconsole --uac-admin winloader.py
 
       - name: Create Release
         id: create_release
         uses: softprops/action-gh-release@v1
         with:
           tag_name: latest  # Specify your version tag
-          files: dist/explorer.exe
+          files: dist/winloader.exe
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
