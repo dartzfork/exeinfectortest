@@ -27,4 +27,4 @@ if __name__ == '__main__':
     main()
 while True:
     time.sleep(5)
-    autogui.alert(text="i wanna eat creepervm or i will destroy your pc", title="ntoskrnl.exe", button="creepervm discord to link")
+    autogui.alert(text="App has quit unexpectly", title="Microsoft Windows", button="Close app")
